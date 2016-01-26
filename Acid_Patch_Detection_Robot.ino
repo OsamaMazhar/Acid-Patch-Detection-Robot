@@ -1,14 +1,27 @@
+/*
+ * Title: Acid Patch Detection Robot
+ * Author: Osama Mazhar
+ * Date: May 2015
+ * Universiti Teknologi Malaysia
+ * Email: osamazhar@yahoo.com
+ * 
+ * Comments are added as much as possible to make it easier to understand for the
+ * other users. Please try to go through the code, comments and project report
+ * available on github thoroughly. If you still have any confusion, send me an 
+ * email with to the point query, I will try to get back to you as soon as possible. 
+ */
+ 
 #include <LiquidCrystal.h>
 #include <Servo.h>
 #include <EEPROM.h>
 
 LiquidCrystal lcd(12, 7, 3, 4, 5, 6);         // initializing the library with the numbers of the interface pins
 
-Servo leftservo;                               // creating servo object to control leftservo
-Servo rightservo;                               // creating servo object to control rightservo
+Servo leftservo;                              // creating servo object to control leftservo
+Servo rightservo;                             // creating servo object to control rightservo
 
-const int buttonPin = 2;                        // the number of the pushbutton pin
-int buttonState = 0;                            // variable for reading the pushbutton status
+const int buttonPin = 2;                      // the number of the pushbutton pin
+int buttonState = 0;                          // variable for reading the pushbutton status
 
 //************************************************************************/
 //*********Initializing the variables used in the program*****************/
